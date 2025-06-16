@@ -1,118 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Libre+Barcode+39&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kenia&family=Libre+Barcode+39&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bookmark?f=duotone&s=regular">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <div class="navbar">
-            <div class="cah">CAH</div>
+        <div class="navigation">
+            <div class="logo">
+                CAH
+            </div>
             <nav>
-                <a href="#">HOME</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">CONTACT</a>
+                <a href="#">Home</a>
+                <a href="#">Portfolio</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
             </nav>
         </div>
-        <section class="container">
-            <h1>
-                I am Lora martin
-                <br>
-                A creative Designer
-            </h1>
-            <p class="para">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Ut elit tellus,</p>
-            <div class="horizontalline"> </div>
-            <div class="socialmediabtn">
-                <a href="#index.html" class="inslogo"></a>
-                <a href="#" class="fblogo"></a>
-                <a href="#" class="ldlogo"></a>
+        <div class="container">
+            <div class="text">
+                I AM LORA MARTIN <br>
+                A CREATIVE DESIGNER
             </div>
-        </section>
+
+            <div class="text1">
+                Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Ut elit tellus,
+            </div>
+            <div class="image">
+                <img src="images/fb.jpg" alt="facebook">
+                <img src="images/insta.jpg" alt="Twitter">
+                <img src="images/ld.jpg" alt="Youtube">
+            </div>
+        </div>
     </header>
-
-    <section class="secondsection">
-        <div class="box">
-            <img class="roketicon"
-                src="images/web.png"
-                alt="">
-            <h1>Web Development</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
+    <section class="container">
+        <div class="gridsection">
+            <div class="one">
+                <img src="images/web.png" alt="WEB Development">
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
+            </div>
+            <div class="divider"></div>
+            <div class="one">
+                <img src="images/graphic.png" alt="Graphic Design">
+                <p class="heading">GRAPHIC DESIGN</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
+            </div>
+            <div class="divider"></div> 
+            <div class="one">
+                <img src="images/mrkt.png" alt="Marketing">
+                <p class="heading">MARKETING</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
+            </div>
         </div>
-        <div class="divider"></div>
-        <div class="box">
-            <img class="roketicon"
-                src="images/graphic.png"
-                alt="">
-            <h1>Graphic Design</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
-        </div>
-        <div class="divider"></div>
-        <div class="box">
-            <img class="roketicon"
-                src="images/mrkt.png"
-                alt="">
-            <h1>Marketing</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus</p>
-        </div>
-
     </section>
-    <section class="thirdsection">
 
 
-        <div class="coursor">
+    <section class="carousel">
+    <div class="carousel-container">
+        <button class="nav prev">&#10094;</button>
 
+    <div class="carousel-track">
+        <img src="images/bg2.jpg" alt="Coffee Bag" />
+        <img src="images/insta.jpg" alt="Smartwatch" />
+        <img src="images/intern.jpg" alt="Folders" />
+        <img src="images/uiux.jpg" alt="Book" />
+    </div>
+    
+    <button class="nav next">&#10095;</button>
+    </div>
+    
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    </section>
 
-            <div class="coursor-content">
-                <img class="email-png" src="https://elementorkits.c-kav.com/demo-01/onepage2/wp-content/uploads/sites/5/2021/04/icon-2-7.png"
-                    alt="">
-                    <div class="coursor-text">
-                        <h1>Commitment to quality and support</h1>
-                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                    ullamcorper mattis, pulvinar dapibus leo.</p>
+    <div class="commitment">
+        <div class="text-content">
+            <h2>COMMITMENT TO QUALITY AND SUPPORT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec <br> ullamcorper mattis,
+                pulvinar dapibus leo.</p>
+        </div>
+        <div class="message">
+            <img src="https://elementorkits.c-kav.com/demo-01/onepage2/wp-content/uploads/sites/5/2021/04/icon-2-7.png" alt=" message">
+        </div>
+    </div>
+
+    <section>
+        <div class="personal">
+            <div>
+                <img src="images/bg2.jpg" alt="women" class="personalimg">
+            </div>
+            <div class="personaltext">
+                <h1 class="htext">PERSONAL DETAILS</h1>
+
+                <P>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </P>
+
+                <ol class="itemlist">
+                    <li>
+                        <i class="fa-solid fa-bookmark" style="color: #74C0FC;"></i>
+                    <span>
+                        BIRTHDAY : 1990 OCTOBER 2
+                    </span>
+                </li>
+                    <li>
+                        <i class="fa-solid fa-bookmark" style="color: #74C0FC;"></i>
+                        <span>
+                            EMAIL: ME@DOMAIN.COM
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bookmark" style="color: #74C0FC;"></i>
+                        <span>
+                            CONTACT: +1234-567-890
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bookmark" style="color: #74C0FC;"></i>
+                        <span>
+                            SPECIALISE: DESIGN & DEVELOPMENTS
+                        </span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bookmark" style="color: #74C0FC;"></i>
+                        <span>
+                            COUNTRY: AUSTRALIA
+                        </span>
+                    </li>
+                </ol>
+
+                <button class="btn1">CONTACT  NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="education">
+            <div class="textedu">
+                <h1>Education</h1>
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>master degree of design</h2>
                     </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>master degree of design</h2>
+                    </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>master degree of design</h2>
+                    </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+            </div>
+
+            
+            <div>
+                <img src="images/hello.jpeg" alt="personaldetail" class="educationimg">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="education">
+
+            <div>
+                <img src="images/ph3.jpg" alt="personaldetail" class="educationimg">
+            </div>
+            <div class="textedu">
+                <h1>work experience</h1>
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>art director</h2>
+                    </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>project manager</h2>
+                    </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="alltext">
+                    <div class="maintext">
+                        <h2>senior us designer</h2>
+                    </div>
+                    <p class="paratext">Mar 2010 – University of Design</p>
+                    <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="featext">
+            <h1>Featured Classes Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper<br>mattis, consectetur adipiscing pulvinar dapibus leo.</p>
+        </div>
+
+        <div class="itemfea">
+            <div>
+                <img src="images/webd.jpg" alt="Web development">
+                <h1>WEB DEVELOPMENT</h1>
+            </div>
+            <div>
+                <img src="images/uiux.jpg" alt="UI-UX designing">
+                <h1>UI/UX DESIGN</h1>
+            </div>
+            <div>
+                <img src="images/digi.jpg" alt="Digital Marketing">
+                <h1>DIGITAL MARKETING</h1>
+            </div>
+            <div>
+                <img src="images/logo.jpg" alt="Logo creater">
+                <h1>LOGO DESIGN</h1>
             </div>
         </div>
 
-
-    </section>
-    <section class="fourthsection">
-        <div class="first-box"></div>
-        <div class="second-box">
-            <h1>Personal Details</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              
-            <h3> Birthday : 1990 October 2</h3>
-            <h3> Email : Me@domain.com</h3>
-            <h3> Contact : +1234-567-890</h3>
-            <h3> Specialise : Design & Developments</h3>
-            <h3> Country : Australia</h3>
-
-            <button class="contact-btn"> contact now</button>
-
+        <div class="itemfea1">
+            <div>
+                <h1>WEB DESIGN</h1>
+            </div>
+            <div>
+                <h1>BANNER DESIGN</h1>
+            </div>
+            <div>
+                <h1>VIDEO ANIMATION</h1>
+            </div>
+            <div>
+                <h1>GOOGLE ADS</h1>
+            </div>
         </div>
 
+        <div class="itemfea1">
+            <div>
+                <h1>WEB DESIGN</h1>
+            </div>
+            <div>
+                <h1>BANNER DESIGN</h1>
+            </div>
+            <div>
+                <h1>VIDEO ANIMATION</h1>
+            </div>
+            <div>
+                <h1>GOOGLE ADS</h1>
+            </div>
+        </div>
     </section>
 
+    <section id="section-text">
+        <div class="backimg">
+            <img src="images/group.jpg" alt="Group Image">
+        </div>
 
+        <div class="outer">
+            <div class="johntext">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="textname">
+                    <span>
+                <img src="images/john.jpg" alt="John">
+            </span>
+            <div class="Name">
+                <span>
+                Jeny Doe
+            </span>
+            <span>DESIGNER</span>
+            </div>
+                </div>
+            </div>
 
+            <div class="johntext">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="textname">
+                    <span>
+                <img src="images/martin.jpg" alt="John">
+            </span>
+            <div class="Name">
+                <span>
+                Jeny Doe
+            </span>
+            <span>DESIGNER</span>
+            </div>
+                </div>
+            </div>
 
+            <div class="johntext">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="textname">
+                    <span>
+                <img src="images/jeny.jpg" alt="John">
+            </span>
+            <div class="Name">
+                <span>
+                Jeny Doe
+            </span>
+            <span>DESIGNER</span>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+        
+    <section>
+        <div class="imagelogosec">
+            <img src="images/logoipsum.png" alt="logo">
+            <img src="images/logoipsum1.png" alt="logo">
+            <img src="images/logoipsum2.png" alt="logo">
+            <img src="images/logoipsum3.png" alt="logo">
+        </div>
+    </section>
+
+    <section>
+        <div class="submit">
+            <div class="leftdiv">
+                <h1>Have any query?</h1>
+                <div class="location">
+                    <h1>Our location</h1>
+                    <p>3683 Mount Olive Road, Norcross, Georgia<br> 30071</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h1>Call us on</h1>
+                    <p>012 3456 7890,</p>
+                    <p>012 3456 7890</p>
+                </div>
+            </div>
+            <div class="centerdiv">hello</div>
+            <div class="rightdiv"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <h1>GRAMI</h1>
+            <div class="contenimage">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/twitter (1).png" alt="Twitter">
+                <img src="images/linkdin.png" alt="Linkdin">
+                <img src="images/browser.png" alt="Browser">
+                <img src="images/youtube.png" alt="Youtube">
+            </div>
+            <div class="line2"></div>
+            <p>C-Kav, © 2020</p>
+        </div>
+    </section>
+        
 
 </body>
+
 
 </html>
