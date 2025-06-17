@@ -397,22 +397,28 @@ a{
 
 .leftdiv{
     position: relative;
-    height: 500px;
+    height: auto;
     width: 50%;
     padding-top: 150px;
     padding-left: 150px;
     background-color: #f0f0f0;
 }
 
-.leftdiv div{
-    padding-top: 15px;
+.leftdiv h1 {
+    font-size: 40px;
+    color: #140748;
+    font-family: 'Bebas Neue';
 }
-
 .leftdiv p{
-    font-size: 25px;
-    color: #a6a6a6;
+    font-size: 22px;
+    color: #666666;
+   font-family: 'Roboto', sans-serif;
 }
-
+.location h1,.call h1{
+    font-size: 22px;
+    color: #140748;
+    font-family: 'Bebas Neue';
+}
 .line{
     border-bottom: 2px solid rgb(147, 145, 145);
     width: 80%;
@@ -424,12 +430,15 @@ a{
     background-color: #5b34e7;
     width: 50%;
     padding-top: 150px;
+    padding-bottom: 80px;
 }
 
 .centerdiv{
     position: relative;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.3);
+ margin-left: -70px;
+ margin-bottom: 500px;
 }
 
 .footer{
@@ -465,4 +474,214 @@ a{
 .footer p{
     padding: 20px;
     padding-bottom: 150px;
+}
+.contact-form-box {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+}
+
+.form-button {
+  width: 150px;
+  padding: 15px;
+  background-color: #2f3332;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #1d1f1e;
+}
+
+
+/* ====================== RESPONSIVE CSS ====================== */
+
+/* Tablets & below (<=1024px) */
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .gridsection,
+  .gridsection2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 60px;
+    gap: 30px;
+  }
+
+  .commitment {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .personal,
+  .education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personalimg,
+  .educationimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .textedu {
+    margin-left: 0;
+  }
+
+  .itemfea,
+  .itemfea1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftdiv,
+  .rightdiv {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .submit {
+    flex-direction: column;
+  }
+
+  .centerdiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Devices (<=768px) */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .text {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text1 {
+    text-align: center;
+  }
+
+  .image {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .gridsection,
+  .gridsection2 {
+    grid-template-columns: 1fr;
+    margin: 40px;
+  }
+
+  .carousel-track img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .commitment {
+    text-align: center;
+  }
+
+  .outer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .johntext {
+    width: 90%;
+  }
+
+  .imagelogosec {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .leftdiv,
+  .rightdiv {
+    padding: 30px;
+  }
+
+  .footer h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices (<=480px) */
+@media (max-width: 480px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .textedu h1,
+  .featext h1 {
+    font-size: 24px;
+  }
+
+  .textedu h2 {
+    font-size: 18px;
+  }
+
+  .personaltext {
+    padding: 20px;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .centerdiv {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form-box {
+    padding: 20px;
+  }
+
+  .leftdiv h1 {
+    font-size: 28px;
+  }
+
+  .footer p {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
